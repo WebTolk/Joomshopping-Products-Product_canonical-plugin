@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="jshoppingproducts" method="upgrade">
+	<name>JoomShopping Product canonical</name>
+	<creationDate>07.03.2023</creationDate>
+	<version>5.1.0</version>
+	<author>MAXXmarketing</author>
+	<authorEmail>support@webdesigner-profi.de</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>MAXXmarketing GmbH</copyright>
+	<license>MAXXmarketing</license>
+	<description>
+		Product canonical
+    </description>
+	<files>
+		<filename plugin="product_canonical">product_canonical.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="hidemain" type="radio" description="Hide on main category" label="Hide on main category" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="dis_generate_main_url" type="radio" description="Disable generate product URL for main category" label="Disable generate product URL for main category" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
